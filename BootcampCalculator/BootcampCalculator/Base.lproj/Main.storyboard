@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4CQ-vr-zeK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ana Sayfa-->
+        <scene sceneID="jCt-As-THy">
+            <objects>
+                <viewController id="4CQ-vr-zeK" customClass="AnaSayfa" customModule="BootcampCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q8c-8d-fgb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OEL-AJ-GLz">
+                                <rect key="frame" x="0.0" y="350" width="414" height="517.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZX-5i-47F">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="103.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0L-U2-dkH">
+                                        <rect key="frame" x="0.0" y="103.5" width="414" height="103.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3i6-kF-0Kg">
+                                        <rect key="frame" x="0.0" y="207" width="414" height="103.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjH-fH-XLf">
+                                        <rect key="frame" x="0.0" y="310.5" width="414" height="103.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-Vd-Ms7">
+                                        <rect key="frame" x="0.0" y="414" width="414" height="103.5"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3i6-kF-0Kg" firstAttribute="centerY" secondItem="OEL-AJ-GLz" secondAttribute="centerY" id="GMa-hs-hXb"/>
+                                    <constraint firstAttribute="height" constant="517.5" id="Hek-NR-kuE"/>
+                                    <constraint firstItem="kXl-Vd-Ms7" firstAttribute="top" secondItem="OEL-AJ-GLz" secondAttribute="top" constant="414" id="Lqg-9I-pil"/>
+                                    <constraint firstItem="3i6-kF-0Kg" firstAttribute="top" secondItem="OEL-AJ-GLz" secondAttribute="top" constant="207" id="rX2-9o-gwl"/>
+                                    <constraint firstAttribute="width" constant="414" id="vKB-ph-3G1"/>
+                                    <constraint firstItem="o0L-U2-dkH" firstAttribute="top" secondItem="OEL-AJ-GLz" secondAttribute="top" constant="103.5" id="zZb-y5-adB"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1d-No-67h">
+                                <rect key="frame" x="0.0" y="350" width="206" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8858431537" green="0.83745245180000005" blue="0.96863164859999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="C">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttons:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="ayP-cV-Rgx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aej-jC-yvM">
+                                <rect key="frame" x="207" y="350" width="206" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8858431537" green="0.83745245180000005" blue="0.96863164859999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="/">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="44"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttons:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="dhP-4X-cYR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-0G-ma4">
+                                <rect key="frame" x="0.0" y="453.5" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84742644300548653" green="0.77145854055669683" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="p0z-zj-r4I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hc-ts-fQc">
+                                <rect key="frame" x="103.5" y="453.5" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84742644300548653" green="0.77145854055669683" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="atf-y3-9TV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnW-Bo-OOg">
+                                <rect key="frame" x="207" y="453.5" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84742644300548653" green="0.77145854055669683" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="WMa-yL-ewL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erk-2n-o1C">
+                                <rect key="frame" x="310.5" y="453.5" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8858431537" green="0.83745245180000005" blue="0.96863164859999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="x">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttons:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="ksN-lQ-1p1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-uE-ooL">
+                                <rect key="frame" x="0.0" y="557" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65386097324006265" green="0.73853385270234617" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="1OU-8R-YkF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCZ-Ha-Hr1">
+                                <rect key="frame" x="103.5" y="557" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65386097324006265" green="0.73853385270234617" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="Ga0-ed-KPX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4l-Q6-TNa">
+                                <rect key="frame" x="207" y="557" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65386097324006265" green="0.73853385270234617" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="E6N-0q-Rzp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxp-eV-6Gg">
+                                <rect key="frame" x="310.5" y="557" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8858431537" green="0.83745245180000005" blue="0.96863164859999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="−">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttons:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="E26-tU-i9T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIF-fv-RRc">
+                                <rect key="frame" x="0.0" y="660.5" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71060829699127259" green="0.70723422519092505" blue="0.99252290496922502" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="JA1-y5-3aN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GC-ti-Cpy">
+                                <rect key="frame" x="103.5" y="660.5" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71060829699127259" green="0.70723422519092505" blue="0.99252290496922502" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="vhm-29-N7C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB9-pb-cYI">
+                                <rect key="frame" x="207" y="660.5" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71060829699127259" green="0.70723422519092505" blue="0.99252290496922502" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="oVp-cH-HQC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSp-rd-RpX">
+                                <rect key="frame" x="310.5" y="660.5" width="102.5" height="102.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8858431537" green="0.83745245180000005" blue="0.96863164859999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttons:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="Zyk-Sm-M1O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2R-cC-3tk">
+                                <rect key="frame" x="0.0" y="764" width="310" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66578135346963352" green="0.63904927401312428" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="0">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numbers:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="99c-Od-vsc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVv-v2-qVs">
+                                <rect key="frame" x="311" y="764" width="103" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8858431537" green="0.83745245180000005" blue="0.96863164859999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="=">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttons:" destination="4CQ-vr-zeK" eventType="touchUpInside" id="egO-vz-Qrj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI1-X0-5Zs">
+                                <rect key="frame" x="0.0" y="115" width="414" height="187"/>
+                                <color key="backgroundColor" red="0.51894974140000005" green="0.4987243885" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="cUp-wB-P67"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Eyl-fr-47H"/>
+                        <color key="backgroundColor" red="0.51894974140000005" green="0.4987243885" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OEL-AJ-GLz" firstAttribute="top" secondItem="YI1-X0-5Zs" secondAttribute="bottom" constant="48" id="MkA-Ak-J6c"/>
+                            <constraint firstItem="YI1-X0-5Zs" firstAttribute="trailing" secondItem="Eyl-fr-47H" secondAttribute="trailing" id="bya-KG-7Cb"/>
+                            <constraint firstItem="OEL-AJ-GLz" firstAttribute="trailing" secondItem="Eyl-fr-47H" secondAttribute="trailing" id="nni-am-vcm"/>
+                            <constraint firstItem="OEL-AJ-GLz" firstAttribute="leading" secondItem="Eyl-fr-47H" secondAttribute="leading" id="xFM-Kx-Epk"/>
+                            <constraint firstItem="YI1-X0-5Zs" firstAttribute="leading" secondItem="Eyl-fr-47H" secondAttribute="leading" id="yBB-ji-dKh"/>
+                            <constraint firstItem="YI1-X0-5Zs" firstAttribute="top" secondItem="Eyl-fr-47H" secondAttribute="top" constant="71" id="yfD-gh-0l9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HmZ-hF-ERx"/>
+                    <connections>
+                        <outlet property="label" destination="YI1-X0-5Zs" id="zKx-bt-NOy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2g6-N0-e1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2376.811594202899" y="37.5"/>
+        </scene>
+    </scenes>
+</document>
